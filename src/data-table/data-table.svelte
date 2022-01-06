@@ -5,10 +5,7 @@
 	import { Column, Row, Container } from '../layout';
 	import { Preloader } from '../preloader';
 	import { SearchInput } from '../search-input';
-	import TableHead from './table-head.svelte';
-	import TableHeadCell from './table-head-cell.svelte';
-	import TableCell from './table-cell.svelte';
-	import TableRow from './table-row.svelte';
+	import { TableHead, TableCell, TableHeadCell, TableRow } from './';
 	import { Pagination } from '../pagination';
 	import { Title } from '../title';
 
