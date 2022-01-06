@@ -9,7 +9,6 @@
 	import TableHeadCell from './table-head-cell.svelte';
 	import TableCell from './table-cell.svelte';
 	import TableRow from './table-row.svelte';
-
 	import { Pagination } from '../pagination';
 	import { Title } from '../title';
 

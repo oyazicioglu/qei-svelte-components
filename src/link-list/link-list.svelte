@@ -1,13 +1,11 @@
 <script>
 	import { createUId } from './../utils/uid-creator.js';
-	import { stores } from '@sapper/app';
+	import { stores } from 'svelte/store';
 	import { createEventDispatcher } from 'svelte';
 	import { Column, Row, Container } from '../layout';
 	import { Icon } from '../icon';
 	import { Divider } from '../divider';
 	import { Link } from '../link';
-
-	export let disabled = false;
 
 	/**
 	 * @type {'default' | 'extra-small' | 'small' | 'large' | 'extra-large'}
@@ -20,6 +18,7 @@
 	export let direction = 'row';
 	export let ref = undefined;
 	export let items = [];
+	export let disabled = false;
 
 	/**
 	 * @type {string}
