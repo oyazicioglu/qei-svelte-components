@@ -23,7 +23,6 @@ export { Spinner } from './spinner';
 export { TabItem, TabView } from './tab-view';
 export { Theme } from './theme';
 export { Title } from './title';
-export { Toolbar } from './toolbar';
 export { Button } from './button';
 export { CheckBox } from './checkbox';
 export { ComboBox } from './combobox';
@@ -36,7 +35,6 @@ export { FlexItem } from './flex';
 export { Pagination } from './pagination';
 export { TextInput } from './text-input';
 
-export { DrawerStore } from './drawer/drawer-store';
 export { EmailValidation } from './utils/validations/EmailValidation';
 export { InputValidation } from './utils/validations/InputValidation';
 export { MatchValues } from './utils/validations/MatchValues';
