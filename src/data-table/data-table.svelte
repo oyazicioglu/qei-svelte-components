@@ -5,7 +5,7 @@
 	import { Column, Row, Container } from '../layout';
 	import { Preloader } from '../preloader';
 	import { SearchInput } from '../search-input';
-	import { TableHead, TableCell, TableHeadCell, TableRow } from './';
+	import { TableHead, TableCell, TableHeadCell, TableRow } from '.';
 	import { Pagination } from '../pagination';
 	import { Title } from '../title';
 
