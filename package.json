@@ -1,8 +1,9 @@
 {
-	"name": "svelte-ui-components",
-	"version": "0.0.1",
+	"name": "qei-svelte-components",
+	"version": "0.0.2",
 	"license": "Apache-2.0",
 	"main": "./src/index.js",
+	"author": "Ömer YAZICIOĞLU",
 	"scripts": {
 		"build": "rollup -c",
 		"dev": "rollup -c -w",
@@ -30,13 +31,10 @@
 		"type": "git",
 		"url": "https://github.com/oyazicioglu/svelte-ui-components.git"
 	},
-	"homepage": "https://github.com/oyazicioglu/svelte-ui-components.git",
 	"keywords": [
 		"svelte",
 		"svelte ui",
+		"svelte ui component",
 		"component library"
-	],
-	"exports": {
-		".": "./src/index.js"
-	}
+	]
 }

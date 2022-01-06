@@ -21,7 +21,6 @@
 	export let ref = undefined;
 	export let items = [];
 
-	Row;
 	/**
 	 * @type {string}
 	 */
