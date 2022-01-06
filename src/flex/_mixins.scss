@@ -1,0 +1,27 @@
+@mixin gap($direction) {
+    @for $var from 0 to 41 {
+        @if $direction == 'row' {
+            &.flex-gap-#{$var} > * {
+                margin-right: #{$var * 0.125}rem;
+            }
+        }
+
+        @if $direction == 'column' {
+            &.flex-gap-#{$var} > * {
+                margin-bottom: #{$var * 0.125}rem;
+            }
+        }
+
+        @if $direction == 'column-reverse' {
+            &.flex-gap-#{$var} > * {
+                margin-top: #{$var * 0.125}rem;
+            }
+        }
+
+        @if $direction == 'row-reverse' {
+            &.flex-gap-#{$var} > * {
+                margin-left: #{$var * 0.125}rem;
+            }
+        }
+    }
+}

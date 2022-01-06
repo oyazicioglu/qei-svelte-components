@@ -1,0 +1,58 @@
+@use './mixins';
+
+.qei-flex {
+    display: flex;
+    position: relative;
+
+    &.flex-inline {
+        display: inline-flex;
+    }
+
+    &.flex-direction-row {
+        flex-direction: row;
+    }
+
+    &.flex-direction-column {
+        flex-direction: column;
+    }
+
+    &.flex-direction-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    &.flex-direction-column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    &.flex-direction-column.has-gap {
+        @include mixins.gap('column');
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.flex-direction-row.has-gap {
+        @include mixins.gap('row');
+        & > *:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &.flex-direction-column-reverse.has-gap {
+        @include mixins.gap('column-reverse');
+        & > *:last-child {
+            margin-top: 0;
+        }
+    }
+
+    &.flex-direction-row-reverse.has-gap {
+        @include mixins.gap('row-reverse');
+        & > *:last-child {
+            margin-left: 0;
+        }
+    }
+
+    .qei-flex-item {
+        position: relative;
+    }
+}

@@ -1,0 +1,5 @@
+@forward "./theme/theme" with ($themeType: "dark");
+
+:root[theme='dark'] {
+    @import './global.scss';
+}

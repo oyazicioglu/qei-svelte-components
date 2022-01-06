@@ -1,0 +1,72 @@
+@use '../styles/theme/theme';
+@use './variables';
+
+@mixin default {
+    color: inherit;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    border: none;
+    outline: none;
+    line-height: 0;
+    font-size: inherit;
+    cursor: default;
+}
+
+@mixin elementSize($size) {
+    @if $size == 'extra-small' {
+        font-size: variables.$extraSmallFontSize;
+    } @else if $size == 'small' {
+        font-size: variables.$smallFontSize;
+    } @else if($size == 'default') {
+        font-size: variables.$defaultFontSize;
+    } @else if($size == 'large') {
+        font-size: variables.$largeFontSize;
+    } @else if($size == 'extra-large') {
+        font-size: variables.$extraLargeFontSize;
+    }
+}
+
+@mixin basic() {
+    @include default();
+    background: transparent;
+    transition: all 200ms ease-in-out;
+
+    &:not(.disabled).color-default {
+        color: map-get($map: theme.$themeColors, $key: 'primaryText');
+    }
+
+    &:not(.disabled).color-primary {
+        color: map-get($map: theme.$primaryColors, $key: 'bg');
+    }
+
+    &:not(.disabled).color-secondary {
+        color: map-get($map: theme.$themeColors, $key: 'secondaryText');
+    }
+
+    &:not(.disabled).color-accent {
+        color: map-get($map: theme.$accentColors, $key: 'bg');
+    }
+
+    &:not(.disabled).color-warning {
+        color: map-get($map: theme.$alertColors, $key: 'warning');
+    }
+
+    &:not(.disabled).color-success {
+        color: map-get($map: theme.$alertColors, $key: 'success');
+    }
+
+    &:not(.disabled).color-info {
+        color: map-get($map: theme.$alertColors, $key: 'info');
+    }
+
+    &:not(.disabled).color-danger {
+        color: map-get($map: theme.$alertColors, $key: 'danger');
+    }
+
+    &.disabled {
+        color: map-get($map: theme.$themeColors, $key: 'disabledText');
+    }
+}

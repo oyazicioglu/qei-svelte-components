@@ -1,0 +1,5 @@
+@use '../styles/theme/theme';
+
+.qei-toolbar {
+    background-color: map-get($map: theme.$themeColors, $key: 'background');
+}

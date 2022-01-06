@@ -1,0 +1,48 @@
+@use '../styles/theme/theme';
+
+.qei-avatar {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &.circle {
+        border-radius: 50%;
+    }
+
+    &.size-extra-small {
+        width: 32px;
+        height: 32px;
+        .qei-text {
+            font-size: 0.75rem;
+        }
+    }
+    &.size-small {
+        width: 48px;
+        height: 48px;
+        .qei-text {
+            font-size: 1rem;
+        }
+    }
+
+    &.size-default {
+        width: 64px;
+        height: 64px;
+        .qei-text {
+            font-size: 1.25rem;
+        }
+    }
+    &.size-large {
+        width: 96px;
+        height: 96px;
+        .qei-text {
+            font-size: 2rem;
+        }
+    }
+    &.size-extra-large {
+        width: 128px;
+        height: 128px;
+        .qei-text {
+            font-size: 3rem;
+        }
+    }
+}

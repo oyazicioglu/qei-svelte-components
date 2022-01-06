@@ -1,0 +1,30 @@
+@use '../styles/theme/theme';
+@use './mixins';
+
+.qei-icon {
+    @include mixins.basic();
+
+    &:disabled {
+        cursor: default;
+    }
+
+    &.size-extra-small {
+        @include mixins.elementSize('extra-small');
+    }
+
+    &.size-small {
+        @include mixins.elementSize('small');
+    }
+
+    &.size-default {
+        @include mixins.elementSize('default');
+    }
+
+    &.size-large {
+        @include mixins.elementSize('large');
+    }
+
+    &.size-extra-large {
+        @include mixins.elementSize('extra-large');
+    }
+}

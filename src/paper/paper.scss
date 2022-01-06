@@ -1,0 +1,55 @@
+@use '../styles/theme/theme';
+@use '../styles/theme/mixins';
+
+.qei-paper {
+	position: relative;
+
+	&.rounded {
+		border-radius: 6px;
+	}
+
+	&:not(.stroked).color-default {
+		color: map-get($map: theme.$themeColors, $key: 'primaryText');
+		background-color: map-get($map: theme.$themeColors, $key: 'paper');
+	}
+
+	&:not(.stroked).color-primary {
+		background-color: map-get($map: theme.$primaryColors, $key: 'bg');
+		color: map-get($map: theme.$primaryColors, $key: 'fg');
+	}
+
+	&:not(.stroked).color-accent {
+		background-color: map-get($map: theme.$accentColors, $key: 'bg');
+		color: map-get($map: theme.$accentColors, $key: 'fg');
+	}
+
+	&:not(.stroked).color-background {
+		color: map-get($map: theme.$themeColors, $key: 'primaryText');
+		background-color: map-get($map: theme.$themeColors, $key: 'background');
+	}
+
+	&.stroked {
+		border: 1px solid map-get($map: theme.$themeColors, $key: 'stroke');
+	}
+
+	&.stroked.color-default {
+		color: map-get($map: theme.$themeColors, $key: 'primaryText');
+		background: transparent;
+	}
+
+	&.stroked.color-primary {
+		color: map-get($map: theme.$primaryColors, $key: 'bg');
+		background: transparent;
+	}
+
+	&.stroked.color-accent {
+		color: map-get($map: theme.$accentColors, $key: 'bg');
+		background: transparent;
+	}
+
+	@for $i from 0 through 10 {
+		&.elevation-#{$i} {
+			@include mixins.elevations($i);
+		}
+	}
+}
