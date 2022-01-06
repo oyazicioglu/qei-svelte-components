@@ -6,6 +6,7 @@
 	import { Text } from '../text';
 	import { Icon } from '../icon';
 	import { IconButton } from '../icon-button';
+	import { List } from '../list';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}
