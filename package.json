@@ -4,6 +4,7 @@
 	"license": "Apache-2.0",
 	"main": "./src/index.js",
 	"author": "Ömer YAZICIOĞLU",
+	"type": "module",
 	"scripts": {
 		"build": "rollup -c",
 		"dev": "rollup -c -w",
