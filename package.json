@@ -1,8 +1,8 @@
 {
-	"name": "qei-svelte-components",
-	"version": "0.0.8",
+	"name": "qei-components",
+	"version": "0.0.11",
 	"license": "Apache-2.0",
-	"main": "./src/index.js",
+	"main": "./src/components/index.js",
 	"author": "Ömer YAZICIOĞLU",
 	"type": "module",
 	"scripts": {
