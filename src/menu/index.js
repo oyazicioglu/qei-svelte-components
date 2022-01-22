@@ -1,1 +1,1 @@
-export { default as Menu } from 'qei-svelte-components/src/menu/menu.svelte';
+export { default as Menu } from './menu.svelte';

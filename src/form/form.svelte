@@ -1,6 +1,6 @@
 <script context="module">
 	import { slide } from 'svelte/transition';
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 	export const formContext = {};
 </script>
 
@@ -10,7 +10,7 @@
 
 	export let disabled = false;
 	export let ref = undefined;
-	export let formError;
+	export let formError = undefined;
 
 	let elements = [];
 
@@ -77,6 +77,10 @@
 </div>
 
 <style lang="scss">
+	.qei-form {
+		width: 100%;
+		position: relative;
+	}
 	.validation-container {
 		font-size: 0.85em;
 		position: relative;

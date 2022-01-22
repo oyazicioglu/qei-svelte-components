@@ -1,1 +1,1 @@
-export { default as Text } from 'qei-svelte-components/src/text/text.svelte';
+export { default as Text } from './text.svelte';

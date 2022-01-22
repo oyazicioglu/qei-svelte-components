@@ -1,5 +1,5 @@
 <script>
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 	/**
 	 * @type {number}
 	 */

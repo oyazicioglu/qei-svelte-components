@@ -1,5 +1,5 @@
 <script>
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 	import { createEventDispatcher, onMount } from 'svelte';
 
 	import { Flex } from '../flex';

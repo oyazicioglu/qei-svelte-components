@@ -1,1 +1,1 @@
-export { default as Paper } from 'qei-svelte-components/src/paper/paper.svelte';
+export { default as Paper } from './paper.svelte';

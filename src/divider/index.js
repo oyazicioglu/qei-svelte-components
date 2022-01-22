@@ -1,1 +1,1 @@
-export { default as Divider } from 'qei-svelte-components/src/divider/divider.svelte';
+export { default as Divider } from './divider.svelte';

@@ -1,5 +1,5 @@
 <script>
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 	import { fade } from 'svelte/transition';
 	import { formContext } from '../form/form.svelte';
 	import { createEventDispatcher, getContext, onMount } from 'svelte';

@@ -1,1 +1,1 @@
-export { default as Select } from 'qei-svelte-components/src/select/select.svelte';
+export { default as Select } from './select.svelte';

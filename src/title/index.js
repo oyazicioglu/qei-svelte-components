@@ -1,1 +1,1 @@
-export { default as Title } from 'qei-svelte-components/src/title/title.svelte';
+export { default as Title } from './title.svelte';

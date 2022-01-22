@@ -1,1 +1,1 @@
-export { default as IconButton } from 'qei-svelte-components/src/icon-button/icon-button.svelte';
+export { default as IconButton } from './icon-button.svelte';

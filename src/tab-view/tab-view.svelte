@@ -3,7 +3,7 @@
 </script>
 
 <script>
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 	import { onMount, setContext } from 'svelte';
 	import { writable } from 'svelte/store';
 	import { Flex, FlexItem } from '../flex';

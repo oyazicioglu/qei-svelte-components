@@ -2,7 +2,7 @@
 	import { Flex } from '../flex';
 	import { Spinner } from '../spinner';
 
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

@@ -1,5 +1,5 @@
 <script>
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 	/**
 	 * @type {'row' | 'row-reverse'|'column' | 'column-reverse'}
 	 */
@@ -28,7 +28,7 @@
 	/**
 	 * @type {string}
 	 */
-	export let gap;
+	export let gap = '0';
 	export let ref = undefined;
 
 	const id = createUId();

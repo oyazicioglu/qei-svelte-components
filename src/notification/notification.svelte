@@ -3,7 +3,7 @@
 	import { NotificationItem } from './';
 	import { NotificationStore } from './NotificationStore';
 
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 
 	export let hasShadow = true;
 	export let rounded = false;

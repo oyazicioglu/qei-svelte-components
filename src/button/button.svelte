@@ -1,7 +1,10 @@
 <script>
+	import { getContext } from 'svelte';
+	import { formContext } from '../form/form.svelte';
+
 	import { Flex } from '../flex';
 	import { Preloader } from '../preloader';
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 
 	/**
 	 * @type {'default' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}
@@ -33,6 +36,8 @@
 	export let reverseOrder = false;
 
 	const id = createUId();
+
+	const context = getContext(formContext);
 
 	$: classes = [`qei-button`, `color-${color}`, `size-${size}`, `type-${type}`, $$restProps.class].filter(Boolean).join(' ');
 

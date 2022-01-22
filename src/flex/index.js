@@ -1,2 +1,2 @@
-export { default as Flex } from 'qei-svelte-components/src/flex/flex.svelte';
-export { default as FlexItem } from 'qei-svelte-components/src/flex/flex-item.svelte';
+export { default as Flex } from './flex.svelte';
+export { default as FlexItem } from './flex-item.svelte';

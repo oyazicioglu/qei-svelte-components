@@ -1,7 +1,7 @@
 <script>
 	import { PasswordInput } from '../password-input';
 
-	import { createUId } from './../utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 	export let password = '';
 	export let passwordConfirm = '';
 	export let isPasswordValid = false;

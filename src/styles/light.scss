@@ -1,5 +1,7 @@
-@forward "./theme/theme" with ($themeType: "light");
+@forward './theme/theme' with (
+	$themeType: 'light'
+);
 
 :root[theme='light'] {
-    @import './global.scss';
+	@import './global.scss';
 }

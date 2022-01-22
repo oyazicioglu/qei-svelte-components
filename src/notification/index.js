@@ -1,2 +1,2 @@
-export { default as Notification } from 'qei-svelte-components/src/notification/notification.svelte';
-export { default as NotificationItem } from 'qei-svelte-components/src/notification/notification-item.svelte';
+export { default as Notification } from './notification.svelte';
+export { default as NotificationItem } from './notification-item.svelte';
