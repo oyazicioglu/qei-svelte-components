@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1;
   position: relative;
   box-sizing: border-box;
@@ -70,7 +70,7 @@
   display: -moz-inline-grid;
 }
 :root[theme=dark] .material-icons {
-  font-size: inherit;
+  font-size: inherit !important;
 }
 :root[theme=dark] .hideOverlay {
   overflow: hidden;
@@ -385,19 +385,19 @@
 :root[theme=dark] .qei-icon:disabled {
   cursor: default;
 }
-:root[theme=dark] .qei-icon.size-extra-small {
+:root[theme=dark] .qei-icon.size-extra-small .material-icons {
   font-size: 0.625rem;
 }
-:root[theme=dark] .qei-icon.size-small {
+:root[theme=dark] .qei-icon.size-small .material-icons {
   font-size: 0.875rem;
 }
-:root[theme=dark] .qei-icon.size-default {
+:root[theme=dark] .qei-icon.size-default .material-icons {
   font-size: 1.125rem;
 }
-:root[theme=dark] .qei-icon.size-large {
+:root[theme=dark] .qei-icon.size-large .material-icons {
   font-size: 1.375rem;
 }
-:root[theme=dark] .qei-icon.size-extra-large {
+:root[theme=dark] .qei-icon.size-extra-large .material-icons {
   font-size: 1.75rem;
 }
 :root[theme=dark] .qei-icon-button {

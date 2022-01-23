@@ -1,6 +1,6 @@
 {
 	"name": "qei-components",
-	"version": "0.0.26",
+	"version": "0.0.27",
 	"license": "Apache-2.0",
 	"main": "./src/components/index.js",
 	"author": "Ömer YAZICIOĞLU",
@@ -9,7 +9,7 @@
 		"build": "rollup -c",
 		"dev": "rollup -c -w",
 		"start": "sirv public --no-clear",
-		"scss": "sass src/components/styles:src/css"
+		"scss": "sass src/components/styles:public/css"
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^17.0.0",
