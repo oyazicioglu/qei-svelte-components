@@ -1,9 +1,10 @@
 <script>
 	import { createUId } from '../utils/uid-creator.js';
 	import { writable } from 'svelte/store';
-	import { Flex, FlexItem } from '../flex';
-	import { Text } from '../text';
-	import { IconButton } from '../icon-button';
+
+	import Flex from '../flex/flex.svelte';
+	import Text from '../text/text.svelte';
+	import IconButton from '../icon-button/icon-button.svelte';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

@@ -6,11 +6,12 @@
 	import { createUId } from '../utils/uid-creator.js';
 	import { onMount, setContext } from 'svelte';
 	import { writable } from 'svelte/store';
-	import { Flex, FlexItem } from '../flex';
-	import { Button } from '../button';
-	import { Divider } from '../divider';
-	import { Text } from '../text';
-	import { Icon } from '../icon';
+	import Divider from '../divider/divider.svelte';
+	import Icon from '../icon/icon.svelte';
+	import Flex from '../flex/flex.svelte';
+	import FlexItem from '../flex/flex-item.svelte';
+	import Button from '../button/button.svelte';
+	import Text from '../text/text.svelte';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

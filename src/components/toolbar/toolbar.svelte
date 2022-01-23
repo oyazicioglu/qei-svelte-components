@@ -1,6 +1,5 @@
 <script>
 	import { createUId } from '$lib/utils/uid-creator.js';
-	import Column from '../layout/column.svelte';
 	import Row from '../layout/row.svelte';
 	import Paper from '../paper/paper.svelte';
 

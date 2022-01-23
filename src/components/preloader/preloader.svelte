@@ -1,7 +1,6 @@
 <script>
-	import { Flex } from '../flex';
-	import { Spinner } from '../spinner';
-
+	import Flex from '../flex/flex.svelte';
+	import Spinner from '../spinner/spinner.svelte';
 	import { createUId } from '../utils/uid-creator.js';
 
 	/**

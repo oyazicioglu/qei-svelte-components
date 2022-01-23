@@ -1,7 +1,5 @@
 <script>
 	import { createUId } from '../utils/uid-creator.js';
-	import { createEventDispatcher } from 'svelte';
-	import { writable } from 'svelte/store';
 	import Row from '../layout/row.svelte';
 	import Container from '../layout/container.svelte';
 

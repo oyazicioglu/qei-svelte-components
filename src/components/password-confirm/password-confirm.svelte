@@ -1,7 +1,7 @@
 <script>
-	import { PasswordInput } from '../password-input';
-
 	import { createUId } from '../utils/uid-creator.js';
+	import PasswordInput from '../password-input/password-input.svelte';
+
 	export let password = '';
 	export let passwordConfirm = '';
 	export let isPasswordValid = false;

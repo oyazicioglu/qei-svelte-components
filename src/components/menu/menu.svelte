@@ -2,11 +2,11 @@
 	import { createUId } from '../utils/uid-creator.js';
 	import { fade } from 'svelte/transition';
 	import { hideOnClickOutside } from '../utils/hideOnClickOutside';
-	import { Button } from '../button';
-	import { Text } from '../text';
-	import { Icon } from '../icon';
-	import { IconButton } from '../icon-button';
-	import { List } from '../list';
+	import Icon from '../icon/icon.svelte';
+	import IconButton from '../icon-button/icon-button.svelte';
+	import Button from '../button/button.svelte';
+	import Text from '../text/text.svelte';
+	import List from '../list/list.svelte';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

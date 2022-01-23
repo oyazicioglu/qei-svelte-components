@@ -1,6 +1,6 @@
 <script>
-	import { Text } from '../text';
 	import { createUId } from '../utils/uid-creator.js';
+	import Text from '../text/text.svelte';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

@@ -1,12 +1,11 @@
 <script>
 	import { createUId } from '../utils/uid-creator.js';
-	import { createEventDispatcher, onMount } from 'svelte';
-
-	import { Flex } from '../flex';
-	import { IconButton } from '../icon-button';
-	import { Paper } from '../paper';
-	import { Select } from '../select';
-	import { Text } from '../text';
+	import { createEventDispatcher } from 'svelte';
+	import Flex from '../flex/flex.svelte';
+	import IconButton from '../icon-button/icon-button.svelte';
+	import Paper from '../paper/paper.svelte';
+	import Select from '../select/select.svelte';
+	import Text from '../text/text.svelte';
 
 	/**
 	 * @type {'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly' | 'start' | 'end' | 'left' | 'right'}

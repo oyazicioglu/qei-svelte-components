@@ -2,11 +2,10 @@
 	import { createUId } from '../utils/uid-creator.js';
 	import { hideOnClickOutside } from '../utils/hideOnClickOutside';
 	import { fade } from 'svelte/transition';
-
-	import { Flex } from '../flex';
-	import { IconButton } from '../icon-button';
-	import { List } from '../list';
-	import { TextInput } from '../text-input';
+	import Flex from '../flex/flex.svelte';
+	import IconButton from '../icon-button/icon-button.svelte';
+	import List from '../list/list.svelte';
+	import TextInput from '../text-input/text-input.svelte';
 
 	/**
 	 * @type {'default' | 'extra-small' | 'small' | 'large' | 'extra-large'}

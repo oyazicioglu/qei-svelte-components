@@ -1,10 +1,8 @@
 <script>
 	import { getContext } from 'svelte';
 	import { formContext } from '../form/form.svelte';
-
-	import { Flex } from '../flex';
-	import { Preloader } from '../preloader';
-	import { createUId } from '../utils/uid-creator.js';
+	import Preloader from '../preloader/preloader.svelte';
+	import Flex from '../flex/flex.svelte';
 
 	/**
 	 * @type {'default' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

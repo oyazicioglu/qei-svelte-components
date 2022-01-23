@@ -2,12 +2,17 @@
 	import { createUId } from '../utils/uid-creator.js';
 	import { createEventDispatcher, onMount } from 'svelte';
 	import { DataTableUtil } from './data-table-utils';
-	import { Column, Row, Container } from '../layout';
-	import { Preloader } from '../preloader';
-	import { SearchInput } from '../search-input';
-	import { TableHead, TableCell, TableHeadCell, TableRow } from '.';
-	import { Pagination } from '../pagination';
-	import { Title } from '../title';
+	import Title from '../title/title.svelte';
+	import Pagination from '../pagination/pagination.svelte';
+	import TableHead from '../data-table/table-head.svelte';
+	import TableCell from '../data-table/table-cell.svelte';
+	import TableRow from '../data-table/table-row.svelte';
+	import TableHeadCell from '../data-table/table-head-cell.svelte';
+	import Container from '../layout/container.svelte';
+	import Row from '../layout/row.svelte';
+	import Column from '../layout/column.svelte';
+	import Preloader from '../preloader/preloader.svelte';
+	import SearchInput from '../search-input/search-input.svelte';
 
 	export let data = {
 		headers: undefined,

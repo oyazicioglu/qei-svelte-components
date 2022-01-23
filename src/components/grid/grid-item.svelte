@@ -15,8 +15,11 @@
 	const id = createUId();
 
 	$: classes = [`qei-grid-item`, $$restProps.class].filter(Boolean).join(' ');
+	$: styles = [justifySelf && `justify-self:${justifySelf}`, alignSelf && `align-self:${alignSelf}`, $$restProps.style]
+		.filter(Boolean)
+		.join(';');
 </script>
 
-<div {id} bind:this={ref} {...$$restProps} class={classes} style={$$restProps.style}>
+<div {id} bind:this={ref} {...$$restProps} class={classes} style={styles}>
 	<slot />
 </div>

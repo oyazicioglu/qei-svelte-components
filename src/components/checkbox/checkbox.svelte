@@ -2,9 +2,9 @@
 	import { createUId } from '../utils/uid-creator.js';
 	import { formContext } from '../form/form.svelte';
 	import { getContext, onMount } from 'svelte';
-	import { Flex } from '../flex';
-	import { IconButton } from '../icon-button';
-	import { Text } from '../text';
+	import Flex from '../flex/flex.svelte';
+	import IconButton from '../icon-button/icon-button.svelte';
+	import Text from '../text/text.svelte';
 
 	/**
 	 * @type {'default' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

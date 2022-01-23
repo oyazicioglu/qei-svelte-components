@@ -3,10 +3,10 @@
 	import { fade } from 'svelte/transition';
 	import { formContext } from '../form/form.svelte';
 	import { getContext, onMount } from 'svelte';
-
-	import { Flex, FlexItem } from '../flex';
-	import { Icon } from '../icon';
-	import { IconButton } from '../icon-button';
+	import Icon from '../icon/icon.svelte';
+	import Flex from '../flex/flex.svelte';
+	import FlexItem from '../flex/flex-item.svelte';
+	import IconButton from '../icon-button/icon-button.svelte';
 	import { RequiredValidation } from '../utils/validations/RequiredValidation';
 	import { MaxLengthValidation } from '../utils/validations/MaxLengthValidation';
 	import { MinLengthValidation } from '../utils/validations/MinLengthValidation';

@@ -1,9 +1,9 @@
 <script>
 	import { createUId } from '../utils/uid-creator.js';
-	import { Image } from '../image';
-	import { Paper } from '../paper';
-	import { Flex } from '../flex';
-	import { Text } from '../text';
+	import Paper from '../paper/paper.svelte';
+	import Flex from '../flex/flex.svelte';
+	import Image from '../image/image.svelte';
+	import Text from '../text/text.svelte';
 
 	export let color = 'default';
 	export let size = 'default';

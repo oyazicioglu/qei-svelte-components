@@ -3,10 +3,10 @@
 	import { hideOnClickOutside } from '../utils/hideOnClickOutside';
 	import { fade } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
-	import { Flex } from '../flex';
-	import { Button } from '../button';
-	import { List } from '../list';
-	import { Text } from '../text';
+	import Flex from '../flex/flex.svelte';
+	import Button from '../button/button.svelte';
+	import List from '../list/list.svelte';
+	import Text from '../text/text.svelte';
 
 	/**
 	 * @type {'default' | 'extra-small' | 'small' | 'large' | 'extra-large'}
