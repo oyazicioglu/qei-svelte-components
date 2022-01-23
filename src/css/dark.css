@@ -1,3 +1,6 @@
+:root[theme=dark] {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+}
 :root[theme=dark] * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -71,6 +74,18 @@
 }
 :root[theme=dark] .hideOverlay {
   overflow: hidden;
+}
+:root[theme=dark] .qei-grid {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+:root[theme=dark] .qei-grid.inline {
+  display: grid-inline;
+}
+:root[theme=dark] .qei-grid-item {
+  position: relative;
 }
 :root[theme=dark] .qei-button {
   position: relative;
@@ -682,6 +697,8 @@
 }
 :root[theme=dark] .qei-paper {
   position: relative;
+  overflow: hidden;
+  height: 100%;
 }
 :root[theme=dark] .qei-paper.rounded {
   border-radius: 6px;
@@ -1033,7 +1050,7 @@
   top: 0;
   margin: auto;
   background-color: inherit;
-  z-index: 999;
+  z-index: 9999;
 }
 :root[theme=dark] .qei-preloader.position-fixed {
   position: fixed;
@@ -3516,9 +3533,6 @@
 :root[theme=dark] .qei-avatar.size-extra-large .qei-text {
   font-size: 3rem;
 }
-:root[theme=dark] .qei-toolbar {
-  background-color: #303030;
-}
 :root[theme=dark] .qei-container {
   width: 100%;
   height: 100%;
@@ -3869,23 +3883,6 @@
     box-sizing: border-box;
     flex-grow: 0;
   }
-}
-:root[theme=dark] .qei-drawer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 999;
-  height: 100%;
-}
-:root[theme=dark] .qei-drawer .mask {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 :root[theme=dark] .m-0 {
   margin: 0rem;
