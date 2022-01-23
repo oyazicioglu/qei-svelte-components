@@ -1,6 +1,6 @@
 {
 	"name": "qei-components",
-	"version": "0.0.16",
+	"version": "0.0.17",
 	"license": "Apache-2.0",
 	"main": "./src/components/index.js",
 	"author": "Ömer YAZICIOĞLU",
