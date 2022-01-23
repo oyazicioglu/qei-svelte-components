@@ -3,14 +3,11 @@
 	import { fade } from 'svelte/transition';
 	import { formContext } from '../form/form.svelte';
 	import { getContext, onMount } from 'svelte';
-	import { RequiredValidation } from '../utils/validations/RequiredValidation';
-	import { MaxValueValidation } from '../utils/validations/MaxValueValidation';
-	import { MinValueValidation } from '../utils/validations/MinValueValidation';
-	import { InputValidation } from '../utils/validations/InputValidation.js';
 	import Flex from '../flex/flex.svelte';
 	import FlexItem from '../flex/flex-item.svelte';
 	import IconButton from '../icon-button/icon-button.svelte';
 	import Icon from '../icon/icon.svelte';
+	import { RequiredValidation, MaxValueValidation, MinValueValidation, InputValidation } from 'qei-input-validations';
 
 	/**
 	 * @type {'default' | 'extra-small' | 'small' | 'large' | 'extra-large'}

@@ -6,7 +6,7 @@
 
 <script>
 	import { createEventDispatcher, setContext } from 'svelte';
-	import { InputValidation } from '../utils/validations/InputValidation';
+	import { InputValidation } from 'qei-input-validations';
 
 	export let disabled = false;
 	export let ref = undefined;
