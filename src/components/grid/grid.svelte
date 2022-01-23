@@ -1,5 +1,5 @@
 <script>
-	import { createUId } from '$lib/utils/uid-creator.js';
+	import { createUId } from '../utils/uid-creator.js';
 
 	/**
 	 * @type {'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly'}
