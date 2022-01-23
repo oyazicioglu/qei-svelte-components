@@ -1,6 +1,6 @@
 <script>
-	import { Icon } from '../icon';
 	import { createUId } from '../utils/uid-creator.js';
+	import Icon from '../icon/icon.svelte';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

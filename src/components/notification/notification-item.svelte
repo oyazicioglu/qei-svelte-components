@@ -1,5 +1,12 @@
 <script>
-	import { Divider, FlexItem, Flex, IconButton, Link, Text, Title, NotificationStore } from '..';
+	import Divider from '../divider/divider.svelte';
+	import Flex from '../flex/flex.svelte';
+	import FlexItem from '../flex/flex-item.svelte';
+	import IconButton from '../icon-button/icon-button.svelte';
+	import Link from '../link/link.svelte';
+	import Text from '../text/text.svelte';
+	import Title from '../title/title.svelte';
+	import { NotificationStore } from './NotificationStore.js';
 
 	export let hasShadow = true;
 	export let rounded = false;
