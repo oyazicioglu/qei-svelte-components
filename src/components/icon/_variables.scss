@@ -1,7 +1,7 @@
 @use '../styles/theme/functions';
 
-$extraSmallFontSize: functions.pixelToRem(12);
-$smallFontSize: functions.pixelToRem(14);
-$defaultFontSize: functions.pixelToRem(18);
-$largeFontSize: functions.pixelToRem(24);
-$extraLargeFontSize: functions.pixelToRem(28);
+$extraSmallFontSize: functions.pixelToRem(14);
+$smallFontSize: functions.pixelToRem(16);
+$defaultFontSize: functions.pixelToRem(20);
+$largeFontSize: functions.pixelToRem(28);
+$extraLargeFontSize: functions.pixelToRem(32);
