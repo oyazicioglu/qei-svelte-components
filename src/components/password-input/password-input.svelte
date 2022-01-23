@@ -7,7 +7,10 @@
 	import Flex from '../flex/flex.svelte';
 	import FlexItem from '../flex/flex-item.svelte';
 	import IconButton from '../icon-button/icon-button.svelte';
-	import { RequiredValidation, MaxLengthValidation, MinLengthValidation, InputValidation } from 'qei-input-validations';
+	import { RequiredValidation } from 'qei-input-validations/src/validations/RequiredValidation';
+	import { MinLengthValidation } from 'qei-input-validations/src/validations/MinLengthValidation';
+	import { MaxLengthValidation } from 'qei-input-validations/src/validations/MaxLengthValidation';
+	import { InputValidation } from 'qei-input-validations/src/validations/InputValidation';
 
 	/**
 	 * @type {'default' | 'extra-small' | 'small' | 'large' | 'extra-large'}
