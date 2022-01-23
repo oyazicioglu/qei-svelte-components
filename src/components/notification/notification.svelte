@@ -1,8 +1,8 @@
 <script>
-	import { Flex } from '../flex';
 	import { NotificationStore } from './NotificationStore';
 	import { createUId } from '../utils/uid-creator.js';
 	import NotificationItem from '../notification/notification-item.svelte';
+	import Flex from '../flex/flex.svelte';
 
 	export let hasShadow = true;
 	export let rounded = false;
