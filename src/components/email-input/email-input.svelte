@@ -6,6 +6,7 @@
 	import Flex from '../flex/flex.svelte';
 	import FlexItem from '../flex/flex-item.svelte';
 	import IconButton from '../icon-button/icon-button.svelte';
+	import Icon from '../icon/icon.svelte';
 	import { RequiredValidation } from '../utils/validations/RequiredValidation';
 	import { EmailValidation } from '../utils/validations/EmailValidation';
 	import { MaxLengthValidation } from '../utils/validations/MaxLengthValidation';
