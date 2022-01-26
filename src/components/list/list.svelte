@@ -45,9 +45,7 @@
 </script>
 
 <div {id} bind:this={ref} {...$$restProps} class={classes} style={$$restProps.style}>
-	<Container>
-		<Row {direction} {justifyContent} {alignItems}>
-			<slot />
-		</Row>
-	</Container>
+	<Row {direction} {justifyContent} {alignItems}>
+		<slot />
+	</Row>
 </div>
