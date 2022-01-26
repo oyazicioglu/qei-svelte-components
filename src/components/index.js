@@ -22,6 +22,7 @@ export { default as Row } from './layout/row.svelte';
 export { default as Column } from './layout/column.svelte';
 export { default as Link } from './link/link.svelte';
 export { default as List } from './list/list.svelte';
+export { default as ListItem } from './list/list-item.svelte';
 export { default as Menu } from './menu/menu.svelte';
 export { default as Notification } from './notification/notification.svelte';
 export { default as NotificationItem } from './notification/notification-item.svelte';
