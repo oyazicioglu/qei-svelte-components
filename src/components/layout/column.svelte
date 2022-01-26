@@ -25,11 +25,11 @@
 	 */
 	export let alignSelf = 'auto';
 
-	export let extraSmall;
-	export let small;
-	export let medium;
-	export let large;
-	export let extraLarge;
+	export let extraSmall = undefined;
+	export let small = undefined;
+	export let medium = undefined;
+	export let large = undefined;
+	export let extraLarge = undefined;
 	export let ref = undefined;
 
 	const id = createUId();
