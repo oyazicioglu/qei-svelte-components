@@ -1,6 +1,4 @@
 <script>
-	import { getContext } from 'svelte';
-	import { formContext } from '../form/form.svelte';
 	import Preloader from '../preloader/preloader.svelte';
 	import Flex from '../flex/flex.svelte';
 	import { createUId } from '../utils/uid-creator.js';
@@ -36,8 +34,6 @@
 
 	const id = createUId();
 
-	const context = getContext(formContext);
-
 	$: classes = [`qei-button`, `color-${color}`, `size-${size}`, `type-${type}`, $$restProps.class].filter(Boolean).join(' ');
 
 	const onClick = () => {
@@ -59,8 +55,7 @@
 	class:active
 	class:rounded
 	class:fullWidth
-	style={$$restProps.style}
->
+	style={$$restProps.style}>
 	<div class="hover" />
 	{#if waiting}
 		<Preloader showBackground {color} {size} />
