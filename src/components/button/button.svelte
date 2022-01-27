@@ -37,16 +37,7 @@
 
 	$: classes = [`qei-button`, `color-${color}`, `size-${size}`, `type-${type}`, $$restProps.class].filter(Boolean).join(' ');
 
-	$: styles = [
-		`order:${order}`,
-		`flex-grow:${grow}`,
-		`flex-shrink:${shrink}`,
-		`flex-basis:${basis}`,
-		`align-self:${alignSelf}`,
-		$$restProps.style,
-	]
-		.filter(Boolean)
-		.join(';');
+	$: styles = [$$restProps.style].filter(Boolean).join(';');
 
 	const onClick = () => {
 		if (action && !disabled && !waiting) {
