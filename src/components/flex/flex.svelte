@@ -27,7 +27,7 @@
 	/**
 	 * @type {string}
 	 */
-	export let gap = '0';
+	export let gap = undefined;
 	export let ref = undefined;
 	export let fullWidth = true;
 	const id = createUId();
@@ -36,7 +36,7 @@
 		`qei-flex`,
 		`flex-direction-${direction}`,
 		fullWidth && `fullWidth`,
-		gap !== 0 && `has-gap`,
+		gap && `has-gap`,
 		`flex-gap-${gap}`,
 		$$restProps.class,
 	]
@@ -44,6 +44,7 @@
 		.join(' ');
 
 	$: styles = [
+		gap && `${gap}`,
 		`flex-wrap:${wrap}`,
 		`justify-content:${justifyContent}`,
 		`align-items:${alignItems}`,
