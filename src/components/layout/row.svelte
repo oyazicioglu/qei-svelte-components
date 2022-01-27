@@ -28,7 +28,7 @@
 	/**
 	 * @type {string}
 	 */
-	export let gap = '0';
+	export let gap = undefined;
 	export let ref = undefined;
 
 	const id = createUId();
