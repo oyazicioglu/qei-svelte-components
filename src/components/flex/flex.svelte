@@ -44,7 +44,7 @@
 		.join(' ');
 
 	$: styles = [
-		gap && `${gap}`,
+		gap && `gap:${gap}`,
 		`flex-wrap:${wrap}`,
 		`justify-content:${justifyContent}`,
 		`align-items:${alignItems}`,
