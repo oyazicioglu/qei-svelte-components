@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1;
   position: relative;
   box-sizing: border-box;
@@ -68,9 +68,6 @@
   display: inline-grid;
   display: -ms-inline-grid;
   display: -moz-inline-grid;
-}
-:root[theme=light] .material-icons {
-  font-size: inherit !important;
 }
 :root[theme=light] .hideOverlay {
   overflow: hidden;
@@ -386,19 +383,19 @@
   cursor: default;
 }
 :root[theme=light] .qei-icon.size-extra-small .material-icons {
-  font-size: 0.75rem;
-}
-:root[theme=light] .qei-icon.size-small .material-icons {
   font-size: 0.875rem;
 }
+:root[theme=light] .qei-icon.size-small .material-icons {
+  font-size: 1rem;
+}
 :root[theme=light] .qei-icon.size-default .material-icons {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 :root[theme=light] .qei-icon.size-large .material-icons {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 :root[theme=light] .qei-icon.size-extra-large .material-icons {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 :root[theme=light] .qei-icon-button {
   position: relative;
@@ -3543,7 +3540,6 @@
   display: flex;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
   position: relative;
 }
 :root[theme=light] .qei-column {
