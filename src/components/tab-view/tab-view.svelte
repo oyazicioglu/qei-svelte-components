@@ -14,9 +14,9 @@
 	import Text from '../text/text.svelte';
 
 	/**
-	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}
+	 * @type {'default' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}
 	 */
-	export let color = 'inherit';
+	export let color = 'default';
 
 	/**
 	 * @type {'default' | 'extra-small' | 'small' | 'large' | 'extra-large'}
@@ -35,6 +35,7 @@
 
 	export let rounded = false;
 	export let disabled = false;
+	export let stretchHeads = false;
 	export let ref = undefined;
 	const tabs = writable([]);
 	const id = createUId();
@@ -45,10 +46,6 @@
 		tabs.update((current) => {
 			return [...current, tab];
 		});
-	};
-
-	const changeTab = (tab) => {
-		$activeTabIndex = tab.index;
 	};
 
 	const count = () => {
@@ -81,22 +78,22 @@
 		<FlexItem class="headers">
 			<Flex direction="row" {justifyContent} alignItems="stretch">
 				{#each $tabs as tab (tab.index)}
-					<Button
-						style="grow={justifyContent === 'stretch' ? '1' : 'auto'}"
-						fullWidth={justifyContent === 'stretch'}
-						on:click={() => {
-							$activeTabIndex = tab.index;
-						}}
-						active={$activeTabIndex === tab.index}
-						{type}
-						{color}
-						{size}
-					>
-						{#if tab.icon}
-							<Icon {size} iconName={tab.icon} />
-						{/if}
-						<Text {size}>{tab.header}</Text>
-					</Button>
+					<FlexItem grow={stretchHeads ? 1 : 'auto'}>
+						<Button
+							fullWidth
+							on:click={() => {
+								$activeTabIndex = tab.index;
+							}}
+							active={$activeTabIndex === tab.index}
+							{type}
+							{color}
+							{size}>
+							{#if tab.icon}
+								<Icon {size} iconName={tab.icon} />
+							{/if}
+							<Text {size}>{tab.header}</Text>
+						</Button>
+					</FlexItem>
 				{/each}
 			</Flex>
 			<Divider />
