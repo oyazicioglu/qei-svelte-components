@@ -35,6 +35,7 @@
 
 	export let rounded = false;
 	export let disabled = false;
+	export let gap = undefined;
 	export let ref = undefined;
 
 	const id = createUId();
@@ -42,10 +43,12 @@
 	$: classes = [`qei-list`, !disabled && `color-${color}`, `type-${type}`, `size-${size}`, rounded && `rounded`, $$restProps.class]
 		.filter(Boolean)
 		.join(' ');
+
+	$: styles = [gap && `gap:${gap}`, $$restProps.style].filter(Boolean).join(';');
 </script>
 
-<div {id} bind:this={ref} {...$$restProps} class={classes} style={$$restProps.style}>
-	<Row {direction} {justifyContent} {alignItems}>
+<div {id} bind:this={ref} {...$$restProps} class={classes} style={styles}>
+	<Row {direction} {gap} {justifyContent} {alignItems}>
 		<slot />
 	</Row>
 </div>
