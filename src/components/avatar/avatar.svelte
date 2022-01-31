@@ -14,6 +14,7 @@
 	export let text = undefined;
 	export let useBorder = true;
 	export let aspectRatio = '1';
+	export let containImage = true;
 
 	const id = createUId();
 
@@ -34,7 +35,7 @@
 	<Paper {color} class="fullHeight">
 		<Flex class="fullHeight" justifyContent="center" alignItems="center" alignContent="center">
 			{#if imagePath}
-				<Image path={imagePath} ratio={aspectRatio} />
+				<Image contain={containImage} path={imagePath} ratio={aspectRatio} />
 			{:else}
 				<Text {size} {bold}>{text}</Text>
 			{/if}
