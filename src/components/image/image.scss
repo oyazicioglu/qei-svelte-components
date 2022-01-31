@@ -1,0 +1,10 @@
+.qei-image {
+	img {
+		width: 100%;
+	}
+	&.contain {
+		img {
+			object-fit: contain;
+		}
+	}
+}
