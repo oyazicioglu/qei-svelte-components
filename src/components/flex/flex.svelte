@@ -29,7 +29,7 @@
 	 */
 	export let gap = undefined;
 	export let ref = undefined;
-	export let fullWidth = true;
+	export let fullWidth = false;
 	const id = createUId();
 
 	$: classes = [
