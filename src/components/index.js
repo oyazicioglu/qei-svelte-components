@@ -45,3 +45,4 @@ export { default as Theme } from './theme/theme.svelte';
 export { default as Title } from './title/title.svelte';
 export { default as Toolbar } from './toolbar/toolbar.svelte';
 export { default as ToolbarItem } from './toolbar/toolbar-item.svelte';
+export { default as AppHeader } from './app-header/app-header.svelte';
