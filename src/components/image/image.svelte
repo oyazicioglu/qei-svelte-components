@@ -5,6 +5,7 @@
 	export let ref = undefined;
 	export let altText = '';
 	export let contain = true;
+	export let width = 'auto';
 
 	const id = createUId();
 
@@ -12,5 +13,5 @@
 </script>
 
 <div {id} bind:this={ref} {...$$restProps} class={classes} style={$$restProps.style}>
-	<img src={path} alt={altText} style="aspect-ratio: {ratio};" />
+	<img {width} src={path} alt={altText} style="aspect-ratio: {ratio};" />
 </div>
