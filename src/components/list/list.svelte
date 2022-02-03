@@ -1,7 +1,7 @@
 <script>
 	import { createUId } from '../utils/uid-creator.js';
 	import Row from '../layout/row.svelte';
-	import Container from '../layout/container.svelte';
+	import Paper from '../paper/paper.svelte';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}
@@ -37,6 +37,10 @@
 	export let disabled = false;
 	export let gap = undefined;
 	export let ref = undefined;
+	export let hasShadow = true;
+	export let paddingVertical = 0;
+	export let paddingHorizontal = 0;
+	export let hideOverflow = false;
 
 	const id = createUId();
 
@@ -48,7 +52,13 @@
 </script>
 
 <div {id} bind:this={ref} {...$$restProps} class={classes} style={styles}>
-	<Row {direction} {gap} {justifyContent} {alignItems}>
-		<slot />
-	</Row>
+	<Paper
+		{hideOverflow}
+		{rounded}
+		elevation={hasShadow ? '3' : '0'}
+		class="pl-{paddingHorizontal} pr-{paddingHorizontal} pt-{paddingVertical} pb-{paddingVertical}">
+		<Row {direction} {gap} {justifyContent} {alignItems}>
+			<slot />
+		</Row>
+	</Paper>
 </div>

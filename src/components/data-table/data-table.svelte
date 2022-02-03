@@ -3,7 +3,6 @@
 	import { createEventDispatcher, onMount } from 'svelte';
 	import { DataTableUtil } from './data-table-utils';
 	import Title from '../title/title.svelte';
-	import Pagination from '../pagination/pagination.svelte';
 	import TableHead from '../data-table/table-head.svelte';
 	import TableCell from '../data-table/table-cell.svelte';
 	import TableRow from '../data-table/table-row.svelte';
@@ -20,13 +19,11 @@
 	};
 
 	export let showSearch = false;
-	export let showPagination = false;
 	export let showFilters = false;
 	export let ref = undefined;
 	export let hasDivider = true;
 	export let useStrip = false;
 	export let condense = false;
-	export let limitOptions = [];
 
 	let waiting = true;
 	let filteredData = data;
@@ -53,9 +50,11 @@
 		dispatch('rowSelect', { index, data });
 	};
 
-	onMount(async () => {
-		waiting = false;
-	});
+	$: {
+		if (filteredData) {
+			waiting = false;
+		}
+	}
 </script>
 
 <div {id} bind:this={ref} {...$$restProps} class={tableClasses} style={$$restProps.style}>
@@ -101,8 +100,7 @@
 														sort(i);
 													}
 												}}
-												align={header.align}>{header.text}</TableHeadCell
-											>
+												align={header.align}>{header.text}</TableHeadCell>
 										{/each}
 									</TableHead>
 								</thead>
@@ -117,8 +115,7 @@
 											{condense}
 											{useStrip}
 											{hasDivider}
-											odd={j % 2 === 1}
-										>
+											odd={j % 2 === 1}>
 											{#each Object.entries(row) as [key, value], k}
 												<TableCell align={filteredData.headers[k].align}>{value}</TableCell>
 											{/each}
@@ -128,16 +125,6 @@
 							{/if}
 						</table>
 					</div>
-				{/if}
-			</Column>
-			<Column>
-				{#if showPagination}
-					<Pagination
-						on:change={limitRecord}
-						totalRecord={data.rows ? data.rows.length : 0}
-						justifyContent="end"
-						{limitOptions}
-					/>
 				{/if}
 			</Column>
 		</Row>

@@ -3,7 +3,7 @@
 	import Text from '../text/text.svelte';
 
 	/**
-	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}
+	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger' |'secondary'}
 	 */
 	export let color = 'inherit';
 
@@ -39,4 +39,5 @@
 	<a {href} target={outbound ? '_blank' : ''}>
 		<Text {color} {size} {bold} {italic} {disabled}><slot /></Text>
 	</a>
+	<div class="underline" />
 </div>

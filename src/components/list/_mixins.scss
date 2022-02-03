@@ -1,62 +1,45 @@
-@use "../styles/theme/theme";
-@use "../styles/theme/mixins" as globalMixins;
-@use "../styles/theme/variables" as themeVariables;
+@use '../styles/theme/theme';
+@use '../styles/theme/mixins' as globalMixins;
+@use '../styles/theme/variables' as themeVariables;
 
 @mixin default {
-    overflow: hidden;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-    border: 1px solid transparent;
+	position: relative;
+	line-height: 1;
+	border: 1px solid transparent;
 }
 
 @mixin round($size) {
-    @if $size == 'extra-small' {
-        border-radius: themeVariables.$extraSmallRound;
-    } @else if $size == 'small' {
-        border-radius: themeVariables.$smallRound;
-    } @else if($size == 'default') {
-        border-radius: themeVariables.$defaultRound;
-    } @else if($size == 'large') {
-        border-radius: themeVariables.$largeRound;
-    } @else if($size == 'extra-large') {
-        border-radius: themeVariables.$extraLargeRound;
-    }
-}
-
-@mixin padding($size) {
-    @if $size == 'extra-small' {
-        padding: themeVariables.$extraSmallRound 0;
-    } @else if $size == 'small' {
-        padding: themeVariables.$smallRound 0;
-    } @else if($size == 'default') {
-        padding: themeVariables.$defaultRound 0;
-    } @else if($size == 'large') {
-        padding: themeVariables.$largeRound 0;
-    } @else if($size == 'extra-large') {
-        padding: themeVariables.$extraLargeRound 0;
-    }
+	@if $size == 'extra-small' {
+		border-radius: themeVariables.$extraSmallRound;
+	} @else if $size == 'small' {
+		border-radius: themeVariables.$smallRound;
+	} @else if($size == 'default') {
+		border-radius: themeVariables.$defaultRound;
+	} @else if($size == 'large') {
+		border-radius: themeVariables.$largeRound;
+	} @else if($size == 'extra-large') {
+		border-radius: themeVariables.$extraLargeRound;
+	}
 }
 
 @mixin basic() {
-    @include default();
-    background: transparent;
-    color: map-get($map: theme.$themeColors, $key: 'primaryText');
+	@include default();
+	background: transparent;
+	color: map-get($map: theme.$themeColors, $key: 'primaryText');
 }
 
 @mixin flat() {
-    @include default();
-    color: map-get($map: theme.$themeColors, $key: 'primaryText');
-    background-color: map-get($map: theme.$themeColors, $key: 'paper');
+	@include default();
+	color: map-get($map: theme.$themeColors, $key: 'primaryText');
+	background-color: map-get($map: theme.$themeColors, $key: 'paper');
 }
 
 @mixin raised() {
-    @include flat();
-    @include globalMixins.elevations(3);
+	@include flat();
+	@include globalMixins.elevations(3);
 }
 
 @mixin stroked() {
-    @include basic();
-    border: 1px solid map-get($map: theme.$themeColors, $key: 'stroke');
+	@include basic();
+	border: 1px solid map-get($map: theme.$themeColors, $key: 'stroke');
 }

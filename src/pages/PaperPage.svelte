@@ -18,7 +18,7 @@
 				<Title heading="7" color="secondary">Default</Title>
 			</Column>
 			<Column grow={1}>
-				<Paper style="height:60px" />
+				<Paper hideOverflow style="height:60px" />
 			</Column>
 		</Row>
 		<Row gap="10px" alignItems="center">

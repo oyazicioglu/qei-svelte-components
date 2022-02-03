@@ -35,7 +35,7 @@
 	<Paper {color} class="fullHeight">
 		<Flex class="fullHeight" justifyContent="center" alignItems="center" alignContent="center">
 			{#if imagePath}
-				<Image contain={containImage} path={imagePath} ratio={aspectRatio} />
+				<Image width="100%" contain={containImage} path={imagePath} ratio={aspectRatio} />
 			{:else}
 				<Text {size} {bold}>{text}</Text>
 			{/if}

@@ -26,10 +26,11 @@
 	 */
 	export let autoFlow = 'row';
 	export let ref = undefined;
-	export let templateColumns;
-	export let templateRows;
+	export let templateColumns = undefined;
+	export let templateRows = undefined;
 	export let inline = false;
 	export let gap = '0';
+	export let absolute = false;
 
 	$: autoFlow = templateColumns || templateRows ? undefined : autoFlow;
 
@@ -39,6 +40,7 @@
 
 	$: styles = [
 		autoFlow && `grid-auto-flow:${autoFlow}`,
+		absolute && `position:absolute`,
 		templateColumns && `grid-template-columns:${templateColumns}`,
 		templateRows && `grid-template-rows:${templateRows}`,
 		gap && `gap:${gap}`,

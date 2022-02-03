@@ -15,4 +15,4 @@
 	$: classes = [`qei-divider`, `color-${color}`, `direction-${direction}`, $$restProps.class].filter(Boolean).join(' ');
 </script>
 
-<div {id} bind:this={ref} {...$$restProps} class={classes} style={$$restProps.style} />
+<div {id} bind:this={ref} {...$$restProps} class={classes} style={$$restProps.style}>&nbsp;</div>

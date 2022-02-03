@@ -27,18 +27,22 @@
 	 * @type {'bottom-left' | 'bottom-right' | 'top-left' | 'top-right'}
 	 */
 	export let position = 'bottom-left';
+	export let hasShadow = true;
 	export let rounded = false;
 	export let disabled = false;
 	export let ref = undefined;
-	export let items = [];
 	export let text = undefined;
 	export let iconName = undefined;
-	export let closeOnSelection = true;
-	export let useShadow = true;
 	export let reverseOrder = false;
-	export let asLink = false;
+	export let itemGap = '0';
+	export let padding = 6;
+	export let hideOverflow = true;
+	export let circledIcon = false;
+	/**
+	 * @type {'row' | 'row-reverse' | 'column' | 'column-reverse'}
+	 */
+	export let direction = 'column';
 
-	let reverseList = false;
 	let showMenu = false;
 	const useIconButton = iconName && !text;
 	const id = createUId();
@@ -63,23 +67,13 @@
 
 		if (position === 'top-right') {
 			style += `bottom:${ref.clientHeight + 2}px; right:0;`;
-			reverseList = true;
 		}
 
 		if (position === 'top-left') {
 			style += `bottom:${ref.clientHeight + 2}px; left:0;`;
-			reverseList = true;
 		}
 
 		return style;
-	};
-
-	const getType = () => {
-		if (type === 'stroked' || type === 'basic') {
-			return useShadow ? 'raised' : 'flat';
-		} else {
-			return useShadow ? 'raised' : type;
-		}
 	};
 </script>
 
@@ -93,10 +87,9 @@
 	{disabled}
 	class={classes}
 	class:rounded
-	style={$$restProps.style}
->
+	style={$$restProps.style}>
 	{#if useIconButton}
-		<IconButton action={toggleMenu} {type} {color} {size} {iconName} {disabled} />
+		<IconButton circle={circledIcon} action={toggleMenu} {type} {color} {size} {iconName} {disabled} />
 	{/if}
 
 	{#if !useIconButton}
@@ -111,24 +104,19 @@
 		</Button>
 	{/if}
 
-	{#if showMenu && items.length > 0}
+	{#if showMenu}
 		<div transition:fade={{ duration: 200 }} class="qei-menu-container" style={containerPosition}>
 			<List
-				{asLink}
-				reverseOrder={reverseList}
-				on:change={() => {
-					if (closeOnSelection) {
-						showMenu = false;
-					}
-				}}
-				{color}
-				indicateActiveItem={false}
-				{items}
-				{disabled}
 				{size}
-				type={getType()}
+				{hideOverflow}
+				paddingHorizontal={padding}
+				paddingVertical={padding}
 				{rounded}
-			/>
+				{hasShadow}
+				{direction}
+				gap={itemGap}>
+				<slot />
+			</List>
 		</div>
 	{/if}
 </div>

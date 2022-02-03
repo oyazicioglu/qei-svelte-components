@@ -1,87 +1,67 @@
-@use "./mixins";
+@use './mixins';
 
 .qei-list {
-    &.color-inherit {
-        color: inherit !important;
-    }
+	&.color-inherit {
+		color: inherit !important;
+	}
 
-    &.type-basic {
-        @include mixins.basic();
-    }
+	&.type-basic {
+		@include mixins.basic();
+	}
 
-    &.type-flat {
-        @include mixins.flat();
-    }
+	&.type-flat {
+		@include mixins.flat();
+	}
 
-    &.type-stroked {
-        @include mixins.stroked();
-    }
+	&.type-stroked {
+		@include mixins.stroked();
+	}
 
-    &.type-raised {
-        @include mixins.raised();
-    }
+	&.type-raised {
+		@include mixins.raised();
+	}
 
-    &.rounded.size-extra-small {
-        @include mixins.round('extra-small');
-    }
+	&.rounded.size-extra-small {
+		@include mixins.round('extra-small');
+	}
 
-    &.rounded.size-small {
-        @include mixins.round('small');
-    }
+	&.rounded.size-small {
+		@include mixins.round('small');
+	}
 
-    &.rounded.size-default {
-        @include mixins.round('default');
-    }
+	&.rounded.size-default {
+		@include mixins.round('default');
+	}
 
-    &.rounded.size-large {
-        @include mixins.round('large');
-    }
+	&.rounded.size-large {
+		@include mixins.round('large');
+	}
 
-    &.rounded.size-extra-large {
-        @include mixins.round('extra-large');
-    }
+	&.rounded.size-extra-large {
+		@include mixins.round('extra-large');
+	}
 
-    &.size-extra-small {
-        @include mixins.padding('extra-small');
-    }
+	&.align-start {
+		.qei-button .qei-grid {
+			justify-content: start !important;
+		}
+	}
 
-    &.size-small {
-        @include mixins.padding('small');
-    }
+	&.align-end {
+		.qei-button .qei-grid {
+			justify-content: end !important;
+		}
+	}
 
-    &.size-default {
-        @include mixins.padding('default');
-    }
+	&.align-center {
+		.qei-button .qei-grid {
+			justify-content: center !important;
+		}
+	}
 
-    &.size-large {
-        @include mixins.padding('large');
-    }
-
-    &.size-extra-large {
-        @include mixins.padding('extra-large');
-    }
-
-    &.align-start {
-        .qei-button .qei-grid {
-            justify-content: start !important;
-        }
-    }
-
-    &.align-end {
-        .qei-button .qei-grid {
-            justify-content: end !important;
-        }
-    }
-
-    &.align-center {
-        .qei-button .qei-grid {
-            justify-content: center !important;
-        }
-    }
-
-    &.align-stretch {
-        .qei-button .qei-grid {
-            justify-content: stretch !important;
-        }
-    }
+	&.align-stretch {
+		.qei-button .qei-grid {
+			justify-content: stretch !important;
+		}
+	}
 }
