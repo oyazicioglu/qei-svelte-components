@@ -1,6 +1,6 @@
 <script>
 	import { createUId } from '../utils/uid-creator.js';
-	import Text from '../text/text.svelte';
+	import Text from '../span/span.svelte';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger' |'secondary'}

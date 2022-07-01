@@ -1,7 +1,55 @@
-@use "../styles/theme/theme";
+@use '../styles/theme/theme';
+@use '../styles/theme/variables' as baseVariables;
 
-.qei-title {
-	font-weight: normal;
+.qei-text {
+	color: inherit;
+	background-color: transparent;
+	font-size: inherit;
+
+	&.size-extra-small {
+		font-size: baseVariables.$extraSmallFontSize;
+	}
+
+	&.size-small {
+		font-size: baseVariables.$smallFontSize;
+	}
+
+	&.size-default {
+		font-size: baseVariables.$defaultFontSize;
+	}
+
+	&.size-large {
+		font-size: baseVariables.$largeFontSize;
+	}
+
+	&.size-extra-large {
+		font-size: baseVariables.$extraLargeFontSize;
+	}
+
+	&.disabled {
+		user-select: none;
+		cursor: default;
+	}
+
+	&.no-wrap {
+		white-space: nowrap;
+	}
+
+	&.align-start {
+		text-align: left;
+	}
+
+	&.align-center {
+		text-align: center;
+	}
+
+	&.align-end {
+		text-align: right;
+	}
+
+	&.align-stretched {
+		text-align: justify;
+	}
 
 	&:not(.disabled).color-inherit {
 		color: inherit;
@@ -11,12 +59,12 @@
 		color: map-get($map: theme.$themeColors, $key: 'primaryText');
 	}
 
-	&:not(.disabled).color-primary {
-		color: map-get($map: theme.$primaryColors, $key: 'bg');
-	}
-
 	&:not(.disabled).color-secondary {
 		color: map-get($map: theme.$themeColors, $key: 'secondaryText');
+	}
+
+	&:not(.disabled).color-primary {
+		color: map-get($map: theme.$primaryColors, $key: 'bg');
 	}
 
 	&:not(.disabled).color-accent {
@@ -41,7 +89,6 @@
 
 	&.disabled {
 		color: map-get($map: theme.$themeColors, $key: 'disabledText');
-		cursor: default;
 	}
 
 	&.bold {
@@ -51,35 +98,4 @@
 	&.italic {
 		font-style: italic;
 	}
-
-	h1 {
-		font-size: 2.5rem;
-	}
-
-	h2 {
-		font-size: 2.25rem;
-	}
-
-	h3 {
-		font-size: 2rem;
-	}
-
-	h4 {
-		font-size: 1.75rem;
-	}
-
-	h5 {
-		font-size: 1.5rem;
-	}
-
-	h6 {
-		font-size: 1.25em;
-	}
-
-	span {
-		font-size: 1em;
-	}
-}
-
-@mixin basic() {
 }

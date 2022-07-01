@@ -5,7 +5,7 @@
 	import Icon from '../icon/icon.svelte';
 	import IconButton from '../icon-button/icon-button.svelte';
 	import Button from '../button/button.svelte';
-	import Text from '../text/text.svelte';
+	import Text from '../span/span.svelte';
 	import List from '../list/list.svelte';
 
 	/**

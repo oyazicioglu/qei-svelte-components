@@ -3,7 +3,7 @@
 	import { writable } from 'svelte/store';
 
 	import Flex from '../flex/flex.svelte';
-	import Text from '../text/text.svelte';
+	import Text from '../span/span.svelte';
 	import IconButton from '../icon-button/icon-button.svelte';
 
 	/**
@@ -53,14 +53,12 @@
 						changeItem(item);
 					}}
 					justifyContent="start"
-					alignItems="center"
-				>
+					alignItems="center">
 					<IconButton
 						iconName={$activeItemStore === item ? 'radio_button_checked' : 'radio_button_unchecked'}
 						{color}
 						disabled={item.disabled}
-						{size}
-					/>
+						{size} />
 					<Text {color} disabled={item.disabled} {size}>{item.text}</Text>
 				</Flex>
 			</div>

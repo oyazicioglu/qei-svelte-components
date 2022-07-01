@@ -11,7 +11,7 @@
 	import Flex from '../flex/flex.svelte';
 	import FlexItem from '../flex/flex-item.svelte';
 	import Button from '../button/button.svelte';
-	import Text from '../text/text.svelte';
+	import Text from '../span/span.svelte';
 
 	/**
 	 * @type {'default' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

@@ -2,6 +2,7 @@
 	import { createUId } from '../utils/uid-creator.js';
 	import Row from '../layout/row.svelte';
 	import Paper from '../paper/paper.svelte';
+	import { setContext } from 'svelte';
 
 	/**
 	 * @type {'inherit' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}
@@ -41,6 +42,14 @@
 	export let paddingVertical = 0;
 	export let paddingHorizontal = 0;
 	export let hideOverflow = false;
+
+	/** @type {ItemType} */
+	let activeItem = undefined;
+
+	/** @param {ItemType} item */
+	const changeItem = (item) => {
+		activeItem = item;
+	};
 
 	const id = createUId();
 

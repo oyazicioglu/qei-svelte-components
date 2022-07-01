@@ -1,7 +1,6 @@
 <script>
 	import FlexItem from '../flex/flex-item.svelte';
 	import Flex from '../flex/flex.svelte';
-	import Grid from '../grid/grid.svelte';
 	import Link from '../link/link.svelte';
 	import Paper from '../paper/paper.svelte';
 	import Title from '../title/title.svelte';

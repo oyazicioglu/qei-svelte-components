@@ -4,7 +4,7 @@
 	import FlexItem from '../flex/flex-item.svelte';
 	import IconButton from '../icon-button/icon-button.svelte';
 	import Link from '../link/link.svelte';
-	import Text from '../text/text.svelte';
+	import Text from '../span/span.svelte';
 	import Title from '../title/title.svelte';
 	import { NotificationStore } from './NotificationStore.js';
 

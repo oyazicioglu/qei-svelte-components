@@ -4,7 +4,7 @@
 	import { getContext, onMount } from 'svelte';
 	import Flex from '../flex/flex.svelte';
 	import IconButton from '../icon-button/icon-button.svelte';
-	import Text from '../text/text.svelte';
+	import Text from '../span/span.svelte';
 
 	/**
 	 * @type {'default' | 'primary' | 'accent' | 'warning' | 'info' | 'success' | 'danger'}

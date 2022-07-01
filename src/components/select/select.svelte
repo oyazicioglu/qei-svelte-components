@@ -6,7 +6,7 @@
 	import Flex from '../flex/flex.svelte';
 	import Button from '../button/button.svelte';
 	import List from '../list/list.svelte';
-	import Text from '../text/text.svelte';
+	import Text from '../span/span.svelte';
 
 	/**
 	 * @type {'default' | 'extra-small' | 'small' | 'large' | 'extra-large'}
@@ -58,15 +58,13 @@
 	{...$$restProps}
 	class={classes}
 	class:has-selected={activeItem}
-	style={$$restProps.style}
->
+	style={$$restProps.style}>
 	{#if activeItem && useLabel}
 		<Text color="secondary">{label}</Text>
 	{/if}
 
 	<Button {size} {disabled} type="basic" fullWidth on:click={toggleList}
-		><Flex direction="row" justifyContent="start" alignItems="center">{activeItem ? activeItem.text : label}</Flex></Button
-	>
+		><Flex direction="row" justifyContent="start" alignItems="center">{activeItem ? activeItem.text : label}</Flex></Button>
 	{#if showList}
 		<div transition:fade={{ duration: 200 }} bind:this={containerRef} class="list-container" style={`margin-top:${containerMargin}px`}>
 			<List {activeItem} on:change={changeItem} type={useShadow ? 'raised' : 'flat'} {size} {rounded} items={options} />

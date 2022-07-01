@@ -3,7 +3,7 @@
 	import Paper from '../paper/paper.svelte';
 	import Flex from '../flex/flex.svelte';
 	import Image from '../image/image.svelte';
-	import Text from '../text/text.svelte';
+	import Text from '../span/span.svelte';
 
 	export let color = 'default';
 	export let size = 'default';

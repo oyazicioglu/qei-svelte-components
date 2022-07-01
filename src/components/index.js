@@ -39,7 +39,7 @@ export { default as Select } from './select/select.svelte';
 export { default as Spinner } from './spinner/spinner.svelte';
 export { default as TabView } from './tab-view/tab-view.svelte';
 export { default as TabItem } from './tab-view/tab-item.svelte';
-export { default as Text } from './text/text.svelte';
+export { default as Text } from './span/span.svelte';
 export { default as TextInput } from './text-input/text-input.svelte';
 export { default as Theme } from './theme/theme.svelte';
 export { default as Title } from './title/title.svelte';
